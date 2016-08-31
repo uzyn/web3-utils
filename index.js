@@ -56,7 +56,28 @@ module.exports = (web3) => {
     if (!blocks) {
       return [];
     }
-    console.log(blocks.length);
+
+    const transactions = [];
+    for (let i in blocks) {
+      const block = blocks[i];
+      for (let j in block.transactions) {
+        const hash = block.transactions[j];
+        const transaction = web3.eth.getTransaction(hash);
+
+        let toInclude = true;
+        if (conditions.address.to && conditions.address.to !== transaction.to) {
+          toInclude = false;
+        }
+        if (conditions.address.from && conditions.address.from !== transaction.from) {
+          toInclude = false;
+        }
+
+        if (toInclude) {
+          transactions.push(transaction);
+        }
+      }
+    }
+    return transactions;
   }
 
   return { getBlocks, findTransactions };
