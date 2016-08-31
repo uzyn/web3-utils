@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/uzyn/web3-utils/issues"
   },
-  "homepage": "https://github.com/uzyn/web3-utils#readme"
+  "homepage": "https://github.com/uzyn/web3-utils#readme",
+  "peerDependencies": {
+    "web3": "0.*"
+  }
 }
