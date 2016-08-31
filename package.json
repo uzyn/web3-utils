@@ -1,0 +1,32 @@
+{
+  "name": "web3-utils",
+  "version": "0.0.1",
+  "description": "Utilities for happier web3.js experience",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzyn/web3-utils.git"
+  },
+  "keywords": [
+    "web3",
+    "web3.js",
+    "web3js",
+    "ethereum",
+    "eth",
+    "etc",
+    "ether",
+    "dapp",
+    "decentralized",
+    "app",
+    "decentralization"
+  ],
+  "author": "U-Zyn Chua <chua@uzyn.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/uzyn/web3-utils/issues"
+  },
+  "homepage": "https://github.com/uzyn/web3-utils#readme"
+}
